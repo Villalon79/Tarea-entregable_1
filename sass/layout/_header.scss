@@ -1,0 +1,83 @@
+ .header {
+  .container {
+     
+    display: flex;
+    align-items: center;
+  }
+}
+.logo img {
+  width: 150px;
+}
+ .nav {
+  margin-left: 100px; // 🔥 separa del logo
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 32px; // 🔥 ajustado (antes 56 → demasiado)
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ .nav ul li a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  color: #264065;
+  font-size: 12px;
+}
+.nav ul li a:hover {
+    color: rgb(223, 17, 17);  
+}
+ 
+ 
+ .header-actions {
+  margin-left: auto; // 🔥 clave para empujar a la derecha
+  display: flex;
+  align-items: center;
+  gap: 40px; // 🔥 ajustado (antes 66)
+}
+ .icons {
+   display: flex;
+  gap: 24px; // 🔥 ajustado (antes 32)
+
+  img {
+    width: 18px;
+    height: 18px;
+  }
+  img:hover {
+    background-color: yellow;
+  }
+}
+.icons a:hover {
+    background-color: yellow;
+}
+.auth {
+  display: flex;
+  align-items: center;
+  gap: 20px; // 🔥 ajustado (antes 32)
+
+  .login {
+    padding: 8px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+ .login:hover {
+    color: black;
+ }
+  .btn {
+    padding: 16px 40px;
+    font-size: 12px;
+    background: #264065;
+    color: white;
+    border-radius: 32px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .btn:hover {
+    background-color: yellow;
+    color: black;
+  }
+}

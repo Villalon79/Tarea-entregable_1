@@ -1,0 +1,158 @@
+
+.hero-image img {
+  max-width: 1000px;
+  height: auto;
+  display: block;
+   transform: translateX(-40px);
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+ 
+}
+.hero-wrapper {
+  position: relative;
+}
+.hero-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 28%;
+  height: 70%; 
+  background-color: rgba(56, 251, 218, 0.5);
+  z-index: -2;
+}
+.hero-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;   // ajusta
+  height: 500px;
+
+  background-image: url('../../img/flor_spa_fondo.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  z-index: -1; // 🔥 delante del fondo pero detrás del contenido
+}
+
+.hero-left {
+  width: 40%;
+}
+.hero-right{
+    width: 60%;
+}
+.hero-right {
+  width: 60%;
+  position: relative; // 🔥 importante para las cards
+}
+.hero-image img {
+  max-width: 100%;
+}
+.hero-title {
+    font-family: $primary-font;
+    font-weight: bold;
+    font-size: 40px;
+    color: #264065;
+    margin-bottom: 30px;
+}
+.hero-text {
+    color: #909090;
+    font-family: $primary-font;
+    font-weight: regular;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.hero-buttons {
+    display: flex ;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 30px;
+
+}
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #264065;
+}
+.btn-secondary:hover {
+    color: yellow;
+}
+.btn-primary {
+     padding: 16px 40px;
+    font-size: 12px;
+    background: #264065;
+    color: white;
+    border-radius: 32px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.btn-primary:hover {
+    background-color: yellow;
+    color: black;
+}
+.hero-stats {
+    display: flex;
+    gap: 20px;
+}
+.stat {
+    img {
+        max-width: 40px;
+        background-color: #A9D6CB;
+        border-radius: 100%;
+        margin-bottom: 10px;
+    }
+    .number {
+        color: #264065;
+        font-weight: medium;
+        font-family: $primary-font;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .label {
+       color: #909090; 
+       font-family: $primary-font;
+       font-weight: regular;
+       font-size: 10px;
+       text-align: center;
+       max-width: 100px; 
+    }
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+.hero-card {
+    p {
+        font-family: $primary-font;
+        font-weight: regular;
+        font-size: 10px;
+        color: black;
+    }
+    .author {
+        font-family: $primary-font;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    position: absolute;
+    display: block;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+.card-1 {
+    top: 200px;
+    right: 40px;
+    max-width: 200px;
+}
+.card-2 {
+    bottom: 5px;
+    right: 150px;
+    max-width: 200px;
+}
